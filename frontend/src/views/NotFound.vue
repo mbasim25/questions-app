@@ -1,0 +1,18 @@
+<template>
+    <div>
+        <div class="container my-2">
+            <h1 id="notfound">{{ message }}</h1>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "NotFound",
+    data(){
+        return{
+            message: "404 - Page Not Found"
+        }
+    }
+}
+</script>
