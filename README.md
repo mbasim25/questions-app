@@ -58,3 +58,4 @@ for the time being there are 2 main features that the design for is not finished
 - redesign the site.
 - Add categories.
 - Add a user profile/page.
+- Add search functionality.
