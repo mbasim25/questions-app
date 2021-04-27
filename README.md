@@ -3,6 +3,25 @@ A Q&amp;A app where users can create an account, ask questions, receive answers 
 
 made with Django rest framework and Vuejs/Tailwind.
 
+## Main features
+
+#Questions 
+- Write
+- Update
+- Delete 
+
+#Answers 
+- Write
+- Update
+- Delete
+- Like/Unlike
+
+#Users
+- Create account
+- Login
+- Logout
+
+
 ## How to run the app
 - Fork or download the app.
 
