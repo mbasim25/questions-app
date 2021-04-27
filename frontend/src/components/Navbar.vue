@@ -1,8 +1,8 @@
 <template>
- <header class="-my-2  bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 border-b-2">
+ <header class="-my-2  bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 border-b-2 border-gray-300">
   <div class="flex items-center justify-between px-2 sm:p-0">
     <div>
-      <router-link :to="{ name : 'home' }" class="text-3xl   "><span class="text-red-700 ">Shower Thoughts </span> </router-link>
+      <router-link :to="{ name : 'home' }" class="text-3xl   "><span class="text-red-600 border-b-2 border-red-600 border-opacity-60 ">Shower Thoughts </span> </router-link>
     </div>
     <div class="sm:hidden">
       <button @click="isOpen = !isOpen" type="button" class="text-blue-400 hover:text-blue-300 focus:outline-none">
@@ -38,5 +38,6 @@ export default {
   }
   a.router-link-exact-active{
     color:rgba(17, 24, 39)!important;
+    
   }
 </style>

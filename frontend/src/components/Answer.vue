@@ -1,22 +1,22 @@
 <template>
-    <div class="grid grid-cols-4 py-4">
-        <div class="col-start-2 col-end-4">
-            <div class="">
+    <div class=" container mx-auto px-24 py-4">
+        <div>
+            <div>
                 <div class="mb-2 inline-flex items-center">
-                    <svg class="h-7 w-7  text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="h-7 w-7  text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg> 
-                    <p class="  text-blue-400 mx-1  text-lg"> {{ answer.author }} </p> 
+                    <p class="  text-red-500 tracking-wide mx-1  text-lg"> {{ answer.author }} </p> 
                     
                 </div>
                
             </div>
             <div class=" rounded-md py-2  border-2 shadow-md text-gray-700 ">
-                <h2 class="  py-8 px-4 text-lg ">{{ answer.body}}</h2>
+                <h2 class="  py-4 px-4 text-lg ">{{ answer.body}}</h2>
                 <hr class="">
-             <div class="grid grid-cols-4 py-3 ">
-                    <p class="text-base text-gray-700 px-4  col-start-1 col-end-3">{{answer.created_at}}</p>
-                    <div v-if="isAnswerAuthor" class="col-start-4">
+             <div class=" py-2 flex justify-between mr-6 ">
+                    <p class="text-base text-gray-700 px-4  ">{{answer.created_at}}</p>
+                    <div v-if="isAnswerAuthor">
                         <button class="rounded text-base ml-2"> <router-link
                         :to="{name: 'answer-editor', params: {id: answer.id}}"
                         class="no-underline inline-flex items-center"
@@ -36,7 +36,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div v-else class="col-start-4">
+                    <div v-else>
                         <button @click="toggleLike"  class=" ml-2 focus:outline-none  text-base inline-flex items-center "><svg class="h-5 w-5 ml-1 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg> ({{ likesCounter }})</button>

@@ -1,18 +1,19 @@
 <template >
-    <div class="container my-2">
-        <h1 class="my-4 mx-12  text-2xl">Your Question</h1>
+    <div class="container mx-auto px-32 my-12">
+        <h1 class="my-4 pt-12 pb-2 mx-12  text-2xl">Your Question</h1>
         <form @submit.prevent="onSubmit" >
             <textarea
             v-model="question_body"
-            class=" shadow-md block border-2  w-full pb-36 px-2 py-2 mx-12 mb-1 text-lg leading-normal  border-gray-600 rounded" 
+            class=" shadow-md block border-2 w-full pb-36 px-2 py-2 mx-12 mb-1 text-lg leading-normal  border-gray-500 border-opacity-50 rounded" 
             placeholder="what do you want to ask?"
-            rows="10"></textarea>
+            rows="12"></textarea>
             <br>
-            <button type="submit" class="bg-red-400 hover:bg-red-500 shadow-lg hover:text-gray-900   p-2 rounded  text-base text-gray-800 mx-12">Publish</button>
-         
+            <button type="submit" class="  hover:bg-red-500   shadow-md p-2 rounded-xl text-base text-red-400 hover:text-red-100 font-normal tracking-wide mx-12 border-2 border-red-500 border-opacity-60">Publish</button>
+            
         </form>
-         <p v-if="error"  class=" hidden my-2">{{error}}</p>
        
+         <p v-if="error"  class=" hidden my-2">{{error}}</p>
+        <div class="pb-48"></div>
     </div>
 </template>
 

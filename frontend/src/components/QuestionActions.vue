@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <button class="rounded text-base ml-2  "> <router-link
+        <button class="rounded text-base "> <router-link
         :to="{name: 'question-editor', params: {slug: slug}}" class="no-underline inline-flex items-center"><span class="text-gray-800">Edit</span><svg class="w-4 h-4 ml-1 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
 </svg> </router-link></button>

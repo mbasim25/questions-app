@@ -1,49 +1,44 @@
 <template>
-    <div class="mt-12 ">
+    <div class="my-12 container mx-auto px-64  ">
         <div v-if="question" >
-            <div class=" grid grid-cols-4  ">
-             <div class="col-start-2 col-span-2 col-end-4 mb-3   rounded-md py-4 px-2 border-2 shadow-md">
-                 <p class="text-lg font-light text-gray-600 pb-2 pl-2 ">Category :
-                  <span class=" text-gray-600 ">{{ question.category }}</span>
-                 </p>
-                 <hr class="pb-1">
+            <div class="  pb-6  ">
+             <div class="mb-3   rounded-md py-4 px-2 border-2 shadow-md">
                  <p class=" text-lg py-2 text-gray-800 pl-2">Author :
                  <span class=" text-red-500  ">{{ question.author }}</span>
                   </p>
-                 <h1 class=" block px-2 py-2 break-normalmb-1 text-xl leading-normal">{{question.content}}</h1>
+                 <h1 class=" block px-2 py-2 break-normal mb-1 text-xl leading-normal">{{question.content}}</h1>
                   <hr class="my-3"> 
-                  <div class="grid grid-cols-4 ">
-                     <p class="text-lg col-start-1 col-span-2 px-2 text-gray-600 ">Posted at: {{question.created_at}}</p> 
+                  <div class="flex justify-between mr-6">
+                     <p class="text-md font-normal tracking-wide  px-2 text-gray-600 ">Posted at: {{question.created_at}}</p> 
                      <QuestionActions
-                      class="col-start-4 col-end-4 "
                        v-if="isQuestionAuthor"
                        :slug="question.slug" />
                    </div>
                 </div>
             </div>
             
-       <div v-if="userHasAnswered" class="grid grid-cols-4 " >
-           <p class=" text-blue-400 col-start-2 col-end-4 ml-2">You've Already Written an Answer!</p>
+       <div v-if="userHasAnswered"  >
+           <p class=" text-blue-400 ml-2">You've Already Written an Answer!</p>
        </div>
        
-       <div v-else-if="showForm" class=" grid grid-cols-4 pb-4" >
-           <form class=" col-start-2 col-end-4 px-1  " @submit.prevent="onSubmit">
-               <div class="mt-2 my-2 text-lg ">Answer the Question</div>
+       <div v-else-if="showForm" class="  pb-12 px-20" >
+           <form @submit.prevent="onSubmit">
+               <div class="mt-2 my-2 tracking-wide  text-lg ">Answer the Question</div>
                <div >
                    <textarea 
-                   class="w-full px-2 py-2 mb-1 text-lg border-2 border-gray-300 focus:border-gray-500 rounded"
+                   class="w-full px-2 py-2 mb-1 text-lg border-2 bg-gray-50 border-gray-300 focus:border-gray-500 rounded"
                    rows="7"
                    v-model="newAnswerBody"
                    placeholder="share your thoughts!"></textarea>
                </div>
                <div class="">
-                   <button type="submit" class=" bg-gradient-to-tr from-red-500 to-red-200 shadow-sm  text-white py-1 px-1 rounded  text-lg my-2">submit</button>
+                   <button type="submit" class="  hover:bg-red-500   shadow-md p-1.5 rounded-xl text-base text-red-400 hover:text-gray-50 font-normal tracking-wider  border-2 border-red-500 border-opacity-60">Submit</button>
                </div>
            </form>
            <p v-if="error" class="my-2">{{error}}</p>
        </div>
-       <div v-else class=" grid grid-cols-4">
-           <div class="col-start-2  col-end-4">
+       <div v-else class=" ">
+           <div class="">
             <div class="inline-flex ml-3 mb-4">
                 <p>have anything to share ? </p>
                <button
@@ -72,7 +67,7 @@
         <button
         v-show="next"
         @click="getQuestionAnswers"
-        class="">load more</button>
+        class=" hover:bg-red-500   shadow-md p-2 rounded-xl text-base text-red-400 hover:text-gray-50 font-normal tracking-wide mx-12 border-2 border-red-500 border-opacity-60">Load More</button>
       </div> 
       </div>
     </div>

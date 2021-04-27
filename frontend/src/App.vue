@@ -1,6 +1,6 @@
 <template>
-  <div id="app" class=" pb-4 font-serif "  >
-       <NavbarComponent />
+  <div id="app" class="bg-gray-100  pb-12 font-serif "  >
+       <NavbarComponent class="py-2" />
     <router-view />
   </div>
 </template> 

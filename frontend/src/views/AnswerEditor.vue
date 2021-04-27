@@ -1,15 +1,16 @@
 <template>
-    <div class="container my-2">
-        <h1 class="my-4 mx-14 text-gray-800 text-xl">Edit your Answer!</h1>
+    <div class="container mx-auto px-32 my-12">
+        <h1 class="my-4 pt-12 pb-2 mx-12 text-gray-800 text-xl">Edit your Answer!</h1>
         <form @submit.prevent="onSubmit">
             <textarea
             v-model="answerBody"
             class=" shadow-md block border-2  w-full pb-36 px-2 py-2 mx-12 mb-1 text-lg leading-normal border-gray-600 rounded" 
-            rows="10"></textarea>
+            rows="12"></textarea>
             <br>
-            <button type="submit"  class="bg-blue-400 hover:bg-blue-500 hover:text-gray-200 shadow-lg   p-2 rounded  text-base text-gray-800 mx-12">Publish your answer</button>
+            <button type="submit"  class=" hover:bg-red-500   shadow-md p-2 rounded-xl text-base text-red-400 hover:text-gray-50 font-normal tracking-wide mx-12 border-2 border-red-500 border-opacity-60">Publish your answer</button>
         </form>
         <p v-if="error" class=" appearance-none my-2">{{error}}</p>
+         <div class="pb-48"></div>
     </div>
 </template>
 
