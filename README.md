@@ -47,7 +47,7 @@ made with Django rest framework and Vuejs/Tailwind.
 
 - Run vue by opening the frontend file inside of the terminal and running `npm run serve`.
 
-- open the localhost and enjoy.
+- open the project in the localhost.
 
 ## Currently disabled
 
