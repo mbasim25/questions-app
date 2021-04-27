@@ -5,18 +5,18 @@ made with Django rest framework and Vuejs/Tailwind.
 
 ## Main features
 
-#Questions 
+# Questions 
 - Write
 - Update
 - Delete 
 
-#Answers 
+# Answers 
 - Write
 - Update
 - Delete
 - Like/Unlike
 
-#Users
+# Users
 - Create account
 - Login
 - Logout
