@@ -45,6 +45,12 @@ made with Django rest framework and Vuejs/Tailwind.
 
 - open the localhost and enjoy.
 
+## Currently disabled
 
-the categories section of this website is disabled for the time being cus i ran into some problems, 
-the app is by no means finished and still needs alot of work but its a stable version for now 
+for the time being there are 2 main features that the design for is not finished but can be found in the Api which are the Categories and the User questions and answers queryset will be implemented in the future.
+
+## Future updates
+
+- redesign the site.
+- Add categories.
+- Add a user profile/page.
