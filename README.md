@@ -4,7 +4,7 @@ A Q&amp;A app where users can create an account, ask questions, receive answers 
 made with Django rest framework and Vuejs/Tailwind.
 
 ## How to run the app
-1. Fork or download the app.
+- Fork or download the app.
 
 2. Install python on your pc.
 
