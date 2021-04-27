@@ -21,11 +21,15 @@ made with Django rest framework and Vuejs/Tailwind.
 - Login
 - Logout
 
+### Security
+- Token Authentication
+- Session Authentication
+
 
 ## How to run the app
 - Fork or download the app.
 
-- Install python on your pc.
+- Install python.
 
 - Open the project via cli and create a virtual enviroment `py -m venv /name of the venv folder i call it venv`.
 
@@ -33,7 +37,7 @@ made with Django rest framework and Vuejs/Tailwind.
 
 - Install Django/DRF and other requirments by running `py -m pip install Django djangorestframework dotenv pillow`.
 
-- Download Node.js on your pc.
+- Download Node.js.
 
 - Install vue `npm install -g @vue/cli`.
 
