@@ -1,8 +1,12 @@
 # ShowerThoughts
 A Q&amp;A app where users can create an account, ask questions, receive answers and more 
 
-made with django rest for the backend and vuejs/tailwind for the frontend.
+made with Django rest framework and vuejs/tailwind.
 
+## How to run the app
+1.Fork or download the app
+2.Install python on your pc
+3.open the project via cli and create a virtual enviroment 'py -m venv /name of the venv i call it venv'
 requirments:
 venv,
 dotenv,
