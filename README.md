@@ -1,5 +1,7 @@
-# questions-app
-A Q&amp;A app where users can create an account, ask questions, receive answers made with django rest for the backend and vuejs/tailwind for the frontend.
+# ShowerThoughts
+A Q&amp;A app where users can create an account, ask questions, receive answers and more 
+
+made with django rest for the backend and vuejs/tailwind for the frontend.
 
 requirments:
 venv,
