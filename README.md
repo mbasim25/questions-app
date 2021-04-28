@@ -35,7 +35,7 @@ made with Django rest framework and Vuejs/Tailwind.
 
 - Activate the venv `venv\Scripts\activate.bat`.
 
-- Install Django/DRF and other requirments by running `py -m pip install Django djangorestframework dotenv pillow`.
+- Install Django/DRF and other requirments by running `py -m pip install Django djangorestframework dotenv`.
 
 - Download Node.js.
 
