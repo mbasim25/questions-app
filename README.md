@@ -45,7 +45,7 @@ made with Django rest framework and Vuejs/Tailwind.
 
 - Run the venv then open the qq folder inside the terminal run python server by typing `py manage.py runserver`.
 
-- Run vue by opening the frontend file inside of the terminal and running `npm run serve`.
+- Run vue by opening the frontend folder inside of the terminal and running `npm run serve`.
 
 - open the project in the localhost.
 
