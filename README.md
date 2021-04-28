@@ -51,7 +51,7 @@ made with Django rest framework and Vuejs/Tailwind.
 
 ## Currently disabled
 
-for the time being there are 2 main features that the design for is not finished but can be found in the Api which are the Categories and the User questions and answers queryset will be implemented in the future.
+for the time being there are 2 main features that the design for is not finished but can be found in the Api which are the Categories and the User questions and answers queryset, will be implemented in future updates.
 
 ## Future updates
 
